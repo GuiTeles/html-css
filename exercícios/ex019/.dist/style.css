@@ -1,0 +1,41 @@
+@charset "UTF-8"
+
+body{
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: rgb(4, 109, 0);
+}
+
+/* podemos deixar sem o h1, antes da hashtag, assim ele fica como principal sem nome, podendo tornar vários em principal.*/
+h1#principal {
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white;
+}
+
+h2{
+    background-color: rgb(51, 77, 49);
+}
+
+/* tudo que e, HTML for id = em CSS vai ser # (hashtag) 
+   Tudo que em HTML for class = em CSS vai ser . (ponto)
+*/
+.basico {
+    color: #3c805e;
+    
+}
+
+.intermdiario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}
