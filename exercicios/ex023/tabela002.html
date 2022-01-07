@@ -12,20 +12,39 @@
             table{
                 width: 500px;
                 border-collapse: collapse;
+                position: relative;
             }
 
             td, th{
                 border: 1px solid black;
                 padding: 10px;
             }
-
-            thead {
-                background-color: gray;
+            
+            caption {
+                font-size: 1.5em;
+                font-weight: bold;
                 padding: 10px;
+                background-color: lightgray;
             }
 
-            tfoot {
-                background-color: gray;
+            thead, tfoot {
+                background-color: #383838;
+                color: white;
+            }
+
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+                background-color: 383838;
+            }
+
+            tbody > tr:nth-child(odd) {/* 2n-1 */
+                background-color: white;
+            }
+
+            tbody > tr:nth-child(even){
+                background-color: lightgray;
+
             }
 
             td.num{
@@ -40,6 +59,7 @@
         <!--
             Anatomia Para Tabelas Grandes
             Table
+                CAPTION = Legenda
                 Thead
                     Tr, Td, Th
                 Tbody
@@ -48,16 +68,17 @@
                     Tr, Td, Th
         -->
         <table>
+            <caption>População das unidades federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             
             </thead>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>210.147.125</strong></td>
                 </tr>
 
@@ -179,6 +200,95 @@
 
 
         </table>
+        <p>Proident voluptate et fugiat nulla dolore commodo Lorem. Dolor ipsum occaecat laboris eiusmod ea laboris. Tempor amet id
+            magna proident officia laboris esse amet voluptate anim consequat eiusmod. Eu adipisicing et sunt fugiat est est nisi Lorem
+            sit nulla velit. Nostrud aliqua sit nisi commodo reprehenderit ad culpa ut eu tempor fugiat minim. Commodo id do ex
+            consectetur do deserunt nostrud Lorem tempor laborum dolor culpa occaecat. Eiusmod minim eiusmod aliqua in dolor
+            excepteur est occaecat. Lorem est cillum consectetur mollit minim ad excepteur consectetur ea et commodo sint elit. Id
+            in exercitation magna id. Cupidatat proident sunt qui eiusmod esse fugiat minim ut reprehenderit ad. Aliquip irure
+            cupidatat dolore labore consectetur et aliquip nulla elit pariatur. Officia eu sunt sit sit velit aliqua aliquip officia
+            anim. Id fugiat proident veniam do ullamco. Enim pariatur culpa deserunt dolor. Do culpa et sunt sint do ex ea in in velit minim commodo exercitation duis.
+            Velit duis eiusmod ut adipisicing esse nulla ea quis amet qui. Occaecat sit voluptate eiusmod cupidatat in labore. Amet
+            tempor pariatur adipisicing do fugiat ut nisi commodo cillum elit quis. Qui ex ea nostrud incididunt commodo laboris eu.
+            Duis esse labore veniam aliqua. Sint culpa tempor fugiat culpa reprehenderit aliqua. Aliquip magna incididunt anim est
+            commodo et excepteur ex tempor eiusmod dolor irure. Anim duis duis reprehenderit officia aute veniam. Et magna sunt eiusmod
+            ad proident dolor dolore quis nostrud. Excepteur elit non irure eiusmod deserunt anim ad enim enim excepteur esse sit
+            ullamco. Qui elit minim in veniam voluptate exercitation elit cupidatat nulla anim. Do aute do adipisicing dolore ullamco
+            consequat voluptate fugiat ad esse adipisicing laboris. Cillum consequat officia sint veniam et sint irure in enim. Ullamco
+            et labore fugiat exercitation mollit eu veniam. Consequat amet sit dolor enim commodo Lorem cillum. Aute exercitation aliqua
+            esse incididunt cupidatat reprehenderit voluptate velit nulla do in qui. Consectetur excepteur labore ad nisi incididunt
+            mollit voluptate pariatur elit reprehenderit reprehenderit nisi. Ullamco excepteur adipisicing adipisicing laboris elit quis
+            dolor voluptate incididunt laborum enim dolore. Amet duis sit incididunt aliquip consectetur magna. Lorem enim deserunt nisi
+            nisi mollit qui eiusmod duis do ea sunt est duis. Duis anim Lorem aute duis et deserunt ut mollit cillum qui. Qui labore
+            minim magna et ut aliquip sit exercitation qui nostrud. Id quis nisi velit aute sint labore dolore nulla. Cillum occaecat
+            irure commodo nostrud. Non in excepteur esse exercitation fugiat nulla sint incididunt irure consectetur incididunt. Amet
+            in aliqua laboris eiusmod. Laboris non sint consectetur consectetur exercitation reprehenderit elit elit elit. Est ipsum
+            tempor Lorem tempor cupidatat commodo ipsum incididunt incididunt. Cillum aliquip nulla nisi culpa aliqua officia nisi
+            proident sunt. Ut consectetur incididunt esse irure Lorem voluptate ullamco ex dolore reprehenderit labore laboris officia
+            in. Et ullamco dolore tempor aliqua velit eu ea dolor ad duis. Labore aliquip velit id commodo enim aute veniam sunt. Est
+            duis duis sunt amet excepteur labore irure laborum deserunt proident. Ullamco reprehenderit deserunt minim aute. Dolor
+            enim eiusmod sit magna amet consequat id et veniam ullamco fugiat est do nisi. Ipsum et Lorem id nisi esse nisi ea veniam
+            excepteur eiusmod. Exercitation adipisicing aute deserunt do et enim irure velit nostrud.</p>
+
+            <p>Proident voluptate et fugiat nulla dolore commodo Lorem. Dolor ipsum occaecat laboris eiusmod ea laboris. Tempor amet id
+                magna proident officia laboris esse amet voluptate anim consequat eiusmod. Eu adipisicing et sunt fugiat est est nisi Lorem
+                sit nulla velit. Nostrud aliqua sit nisi commodo reprehenderit ad culpa ut eu tempor fugiat minim. Commodo id do ex
+                consectetur do deserunt nostrud Lorem tempor laborum dolor culpa occaecat. Eiusmod minim eiusmod aliqua in dolor
+                excepteur est occaecat. Lorem est cillum consectetur mollit minim ad excepteur consectetur ea et commodo sint elit. Id
+                in exercitation magna id. Cupidatat proident sunt qui eiusmod esse fugiat minim ut reprehenderit ad. Aliquip irure
+                cupidatat dolore labore consectetur et aliquip nulla elit pariatur. Officia eu sunt sit sit velit aliqua aliquip officia
+                anim. Id fugiat proident veniam do ullamco. Enim pariatur culpa deserunt dolor. Do culpa et sunt sint do ex ea in in velit minim commodo exercitation duis.
+                Velit duis eiusmod ut adipisicing esse nulla ea quis amet qui. Occaecat sit voluptate eiusmod cupidatat in labore. Amet
+                tempor pariatur adipisicing do fugiat ut nisi commodo cillum elit quis. Qui ex ea nostrud incididunt commodo laboris eu.
+                Duis esse labore veniam aliqua. Sint culpa tempor fugiat culpa reprehenderit aliqua. Aliquip magna incididunt anim est
+                commodo et excepteur ex tempor eiusmod dolor irure. Anim duis duis reprehenderit officia aute veniam. Et magna sunt eiusmod
+                ad proident dolor dolore quis nostrud. Excepteur elit non irure eiusmod deserunt anim ad enim enim excepteur esse sit
+                ullamco. Qui elit minim in veniam voluptate exercitation elit cupidatat nulla anim. Do aute do adipisicing dolore ullamco
+                consequat voluptate fugiat ad esse adipisicing laboris. Cillum consequat officia sint veniam et sint irure in enim. Ullamco
+                et labore fugiat exercitation mollit eu veniam. Consequat amet sit dolor enim commodo Lorem cillum. Aute exercitation aliqua
+                esse incididunt cupidatat reprehenderit voluptate velit nulla do in qui. Consectetur excepteur labore ad nisi incididunt
+                mollit voluptate pariatur elit reprehenderit reprehenderit nisi. Ullamco excepteur adipisicing adipisicing laboris elit quis
+                dolor voluptate incididunt laborum enim dolore. Amet duis sit incididunt aliquip consectetur magna. Lorem enim deserunt nisi
+                nisi mollit qui eiusmod duis do ea sunt est duis. Duis anim Lorem aute duis et deserunt ut mollit cillum qui. Qui labore
+                minim magna et ut aliquip sit exercitation qui nostrud. Id quis nisi velit aute sint labore dolore nulla. Cillum occaecat
+                irure commodo nostrud. Non in excepteur esse exercitation fugiat nulla sint incididunt irure consectetur incididunt. Amet
+                in aliqua laboris eiusmod. Laboris non sint consectetur consectetur exercitation reprehenderit elit elit elit. Est ipsum
+                tempor Lorem tempor cupidatat commodo ipsum incididunt incididunt. Cillum aliquip nulla nisi culpa aliqua officia nisi
+                proident sunt. Ut consectetur incididunt esse irure Lorem voluptate ullamco ex dolore reprehenderit labore laboris officia
+                in. Et ullamco dolore tempor aliqua velit eu ea dolor ad duis. Labore aliquip velit id commodo enim aute veniam sunt. Est
+                duis duis sunt amet excepteur labore irure laborum deserunt proident. Ullamco reprehenderit deserunt minim aute. Dolor
+                enim eiusmod sit magna amet consequat id et veniam ullamco fugiat est do nisi. Ipsum et Lorem id nisi esse nisi ea veniam
+                excepteur eiusmod. Exercitation adipisicing aute deserunt do et enim irure velit nostrud.</p>
+
+                <p>Proident voluptate et fugiat nulla dolore commodo Lorem. Dolor ipsum occaecat laboris eiusmod ea laboris. Tempor amet id
+                    magna proident officia laboris esse amet voluptate anim consequat eiusmod. Eu adipisicing et sunt fugiat est est nisi Lorem
+                    sit nulla velit. Nostrud aliqua sit nisi commodo reprehenderit ad culpa ut eu tempor fugiat minim. Commodo id do ex
+                    consectetur do deserunt nostrud Lorem tempor laborum dolor culpa occaecat. Eiusmod minim eiusmod aliqua in dolor
+                    excepteur est occaecat. Lorem est cillum consectetur mollit minim ad excepteur consectetur ea et commodo sint elit. Id
+                    in exercitation magna id. Cupidatat proident sunt qui eiusmod esse fugiat minim ut reprehenderit ad. Aliquip irure
+                    cupidatat dolore labore consectetur et aliquip nulla elit pariatur. Officia eu sunt sit sit velit aliqua aliquip officia
+                    anim. Id fugiat proident veniam do ullamco. Enim pariatur culpa deserunt dolor. Do culpa et sunt sint do ex ea in in velit minim commodo exercitation duis.
+                    Velit duis eiusmod ut adipisicing esse nulla ea quis amet qui. Occaecat sit voluptate eiusmod cupidatat in labore. Amet
+                    tempor pariatur adipisicing do fugiat ut nisi commodo cillum elit quis. Qui ex ea nostrud incididunt commodo laboris eu.
+                    Duis esse labore veniam aliqua. Sint culpa tempor fugiat culpa reprehenderit aliqua. Aliquip magna incididunt anim est
+                    commodo et excepteur ex tempor eiusmod dolor irure. Anim duis duis reprehenderit officia aute veniam. Et magna sunt eiusmod
+                    ad proident dolor dolore quis nostrud. Excepteur elit non irure eiusmod deserunt anim ad enim enim excepteur esse sit
+                    ullamco. Qui elit minim in veniam voluptate exercitation elit cupidatat nulla anim. Do aute do adipisicing dolore ullamco
+                    consequat voluptate fugiat ad esse adipisicing laboris. Cillum consequat officia sint veniam et sint irure in enim. Ullamco
+                    et labore fugiat exercitation mollit eu veniam. Consequat amet sit dolor enim commodo Lorem cillum. Aute exercitation aliqua
+                    esse incididunt cupidatat reprehenderit voluptate velit nulla do in qui. Consectetur excepteur labore ad nisi incididunt
+                    mollit voluptate pariatur elit reprehenderit reprehenderit nisi. Ullamco excepteur adipisicing adipisicing laboris elit quis
+                    dolor voluptate incididunt laborum enim dolore. Amet duis sit incididunt aliquip consectetur magna. Lorem enim deserunt nisi
+                    nisi mollit qui eiusmod duis do ea sunt est duis. Duis anim Lorem aute duis et deserunt ut mollit cillum qui. Qui labore
+                    minim magna et ut aliquip sit exercitation qui nostrud. Id quis nisi velit aute sint labore dolore nulla. Cillum occaecat
+                    irure commodo nostrud. Non in excepteur esse exercitation fugiat nulla sint incididunt irure consectetur incididunt. Amet
+                    in aliqua laboris eiusmod. Laboris non sint consectetur consectetur exercitation reprehenderit elit elit elit. Est ipsum
+                    tempor Lorem tempor cupidatat commodo ipsum incididunt incididunt. Cillum aliquip nulla nisi culpa aliqua officia nisi
+                    proident sunt. Ut consectetur incididunt esse irure Lorem voluptate ullamco ex dolore reprehenderit labore laboris officia
+                    in. Et ullamco dolore tempor aliqua velit eu ea dolor ad duis. Labore aliquip velit id commodo enim aute veniam sunt. Est
+                    duis duis sunt amet excepteur labore irure laborum deserunt proident. Ullamco reprehenderit deserunt minim aute. Dolor
+                    enim eiusmod sit magna amet consequat id et veniam ullamco fugiat est do nisi. Ipsum et Lorem id nisi esse nisi ea veniam
+                    excepteur eiusmod. Exercitation adipisicing aute deserunt do et enim irure velit nostrud.</p>
 
 
     </body>
